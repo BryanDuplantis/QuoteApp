@@ -1,0 +1,45 @@
+body {
+  background-image: url('http://img.inspiringwallpapers.net/wp-content/uploads/2013/11/blurry-light-heart.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spotifyInfo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.images {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.loveBtn {
+  margin-right: 100px;
+  height: 150px;
+  width: 150px;
+}
+
+.truthBtn {
+  margin-right: 100px;
+  height: 150px;
+  width: 150px;
+}
+
+.beautyBtn {
+  height: 150px;
+  width: 150px;
+}
+
+.quoteBox {
+  border: 5px solid;
+  border-radius: 25px;
+  background-color: rgb(157,140,114);
+  opacity: 0.8;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 200px;
+}
