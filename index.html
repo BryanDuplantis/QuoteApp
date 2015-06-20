@@ -16,14 +16,41 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
       <script src="main.js"></script>
 
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-          <div class="navbar-header spotifyInfo">
-            <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:2i0HbrNwqR7TTHFFet80W6" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-            <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:user:duplantis&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-          </div>
+
+            <!-- Logo -->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Don't Quote Me</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                    <!-- drop down menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Friends</a></li>
+                            <li><a href="#">Photos</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--right align -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Logout</a></li>
+                </ul>
+
+            </div>
+
         </div>
-      </nav>
+    </nav>
 
       <div class="mainContainer">
         <div class="images">
