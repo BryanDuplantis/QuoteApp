@@ -1,5 +1,5 @@
 var QUOTE_API_URL = 'http://api.theysaidso.com/qod?category=love'
-var FIREBASE_URL = 'https://my-cappstone.firebaseio.com/.json'
+var FIREBASE_URL = 'https://my-cappstone.firebaseio.com/'
 var loveBtn;
 var truthBtn;
 var beautyBtn;

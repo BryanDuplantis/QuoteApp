@@ -20,10 +20,6 @@ body {
     text-align:center;
 }
 
-/*.navbar-header {
-  height: 85px;
-}*/
-
 .spotifyInfo {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -66,8 +62,7 @@ body {
   border: 2px solid;
   border-radius: 25px;
   opacity: 0.8;
-  width: 80%;
-  top: 50%;
+  height: 150px;
   margin-top: 50px;
 }
 
