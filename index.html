@@ -11,14 +11,8 @@
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-      <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
-      <script src="main.js"></script>
-
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-
             <!-- Logo -->
             <div class="navbar-header">
                 <a href="#" class="navbar-brand">Don't Quote Me</a>
@@ -26,54 +20,59 @@
             <!-- Menu Items -->
             <div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <!-- <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li> -->
                     <!-- drop down menu -->
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Friends</a></li>
                             <li><a href="#">Photos</a></li>
                             <li><a href="#">Settings</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
                 <!--right align -->
-                <ul class="nav navbar-nav navbar-right">
+                <!-- <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Logout</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </nav>
-
-      <h1>Click a button to generate a quote</h1>
-
       <div class="container">
         <div class="row">
-          <div class="col-md-3"></div>
-            <div class="col-md-2">
-                <img class="loveBtn img-responsive pull-left" src="http://www.theelementalpress.com/Abundance_cloud_heart2-450px.png" alt="Love">
+          <div class="col-lg-3">
+              <a class="twitter-timeline" href="https://twitter.com/duplantis/lists/faith" data-widget-id="613081284768854016">Tweets from https://twitter.com/duplantis/lists/faith</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <h1>Click a button to generate a quote</h1>
+            <div class="col-lg-3">
+                <img class="loveBtn img-responsive pull-left" src="http://1.bp.blogspot.com/-H06yphTXaYg/UvLb4Ojh9FI/AAAAAAAAE-I/hOiGzwS-Lrs/s1600/lovearrow.png" alt="Love">
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-3">
                 <img class="truthBtn img-responsive pull-left" src="http://www.truthdubstep.com/images/truth-dubstep.png" alt="Love">
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-3">
                 <img class="beautyBtn img-responsive pull-left" src="http://lh6.ggpht.com/-U9zZT_tnOHw/Tl7JXxrg4uI/AAAAAAAABHo/WkA6ycnQWPc/week3beauty_thumb2.png?imgmax=800" alt="Love">
             </div>
-          <div class="col-md-3"></div>
-        </div>
-      </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 quoteBox">
-              <p id="quote">Take calculated risks. That is quite different from being rash.
-                <span> -George S. Patton</span>
-              </p>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 quoteBox">
+                <p id="quote">
+                  <span id="author"></span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
+      <script src="main.js"></script>
 
     </body>
   </html>
