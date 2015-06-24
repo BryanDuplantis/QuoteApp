@@ -1,5 +1,5 @@
 // var QUOTE_API_URL = 'http://api.theysaidso.com/qod?category=love'
-var FIREBASE_URL = 'https://my-cappstone.firebaseio.com/'
+var FIREBASE_LOVE_URL = 'https://my-cappstone.firebaseio.com/'
 var loveBtn;
 var truthBtn;
 var beautyBtn;
@@ -15,9 +15,7 @@ truthBtn = $(".truthBtn");
 beautyBtn = $(".beautyBtn");
 
 $(".loveBtn").on("click", function() {
-  $.get(FIREBASE_URL + "quotes.json", function (data) {
-    console.log(data[0].author);
-    console.log(data[0].quote);
+  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
     var quote = data[0].quote;
     var author = data[0].author;
@@ -28,12 +26,10 @@ $(".loveBtn").on("click", function() {
   });
 
 $(".truthBtn").on("click", function() {
-  $.get(FIREBASE_URL + "quotes.json", function (data) {
-    console.log(data[1].author);
-    console.log(data[1].quote);
+  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
-    var quote = data[1].quote;
-    var author = data[1].author;
+    var quote = data[9].quote;
+    var author = data[9].author;
 
     $("#quote").html(quote)
     $("#author").html(author)
@@ -42,12 +38,10 @@ $(".truthBtn").on("click", function() {
   });
 
 $(".beautyBtn").on("click", function() {
-  $.get(FIREBASE_URL + "quotes.json", function (data) {
-    console.log(data[2].author);
-    console.log(data[2].quote);
+  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
-    var quote = data[2].quote;
-    var author = data[2].author;
+    var quote = data[11].quote;
+    var author = data[11].author;
 
     $("#quote").html(quote)
     $("#author").html(author)
@@ -55,14 +49,36 @@ $(".beautyBtn").on("click", function() {
 })
   });
 
-// function addQuoteDetail(data) {
+loveArr = [];
+truthArr = [];
+beautyArr = [];
 
-//   var detail = createMovieNode(data);
-//   var target = $('#quote');
+$.get('https://my-cappstone.firebaseio.com/quotes.json')
+            .success(function(data) {
+                quotes = data;
+                for( var i=0; i < Object.keys(quotes).length; i++) {
+                    if( quotes[Object.keys(quotes)[i]].category == 'love' ) {
+                        loveArr.push({
+                          quote: quotes[Object.keys(quotes)[i]].quote,
+                          author: quotes[Object.keys(quotes)[i]].author
+                        });
+                    }
+                    else if ( quotes[Object.keys(quotes)[i]].category == 'truth' ) {
+                        truthArr.push({
+                          quote: quotes[Object.keys(quotes)[i]].quote,
+                          author: quotes[Object.keys(quotes)[i]].author
+                        });
+                    }
+                    else if ( quotes[Object.keys(quotes)[i]].category == 'beauty' ) {
+                        beautyArr.push({
+                          quote: quotes[Object.keys(quotes)[i]].quote,
+                          author: quotes[Object.keys(quotes)[i]].author
+                        });
+                    }
+                }
+            });
 
-//   target.empty();
-//   target.append(detail);
-// }
+
 
 
 
@@ -89,6 +105,68 @@ function getJSON(url, cb) {
 
 
 
+
+
+
+
+
+
+
+// find template and compile it
+// var templateSource = document.getElementById('results-template').innerHTML,
+//     template = Handlebars.compile(templateSource),
+//     resultsPlaceholder = document.getElementById('results'),
+//     playingCssClass = 'playing',
+//     audioObject = null;
+
+// var fetchTracks = function (albumId, callback) {
+//     $.ajax({
+//         url: 'https://api.spotify.com/v1/albums/' + albumId,
+//         success: function (response) {
+//             callback(response);
+//         }
+//     });
+// };
+
+// var searchAlbums = function (query) {
+//     $.ajax({
+//         url: 'https://api.spotify.com/v1/search',
+//         data: {
+//             q: 'artist:' + query,
+//             type: 'album',
+//             market: "US"
+//         },
+//         success: function (response) {
+//             resultsPlaceholder.innerHTML = template(response);
+//         }
+//     });
+// };
+
+// results.addEventListener('click', function(e) {
+//     var target = e.target;
+//     if (target !== null && target.classList.contains('cover')) {
+//         if (target.classList.contains(playingCssClass)) {
+//             audioObject.pause();
+//         } else {
+//             if (audioObject) {
+//                 audioObject.pause();
+//             }
+//             fetchTracks(target.getAttribute('data-album-id'), function(data) {
+//                 audioObject = new Audio(data.tracks.items[0].preview_url);
+//                 audioObject.play();
+//                 target.classList.add(playingCssClass);
+//                 audioObject.addEventListener('ended', function() {
+//                     target.classList.remove(playingCssClass);
+//                 });
+//                 audioObject.addEventListener('pause', function() {
+//                     target.classList.remove(playingCssClass);
+//                });
+//             });
+//         }
+//     }
+// });
+
+// searchAlbums('Beastie Boys');
 
 
 
