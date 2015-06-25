@@ -17,83 +17,86 @@ body {
     text-align:center;
 }
 
-/*.spotifyInfo {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  text-align: center;
-}*/
-
 #navBarName {
   font-size: 2.2em;
   height: 10px;
 }
 
+.twitterBox {
+  border: 1px solid black;
+  background-color: rgb(99,131,121);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 25px;
+}
+
 #titleText {
+  border: 1px solid black;
+  background-color: rgb(220,196,145);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 25px;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 2.2em;
-  height: 10px;
-  text-align: center
-  margin-top; 15px;
-  margin-left: 250px;
-}
-
-.images {
   text-align: center;
-  margin-top: 50px;
 }
 
 .loveBtn {
   margin-top: 25px;
   margin-right: 100px;
   margin-left: 100px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .truthBtn {
   margin-top: 25px;
   margin-right: 100px;
   margin-left: 60px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .beautyBtn {
   margin-top: 25px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .quoteBox {
   position: absolute;
-  padding: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(157,140,114);
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 25px;
-  opacity: 0.8;
-  height: 150px;
+  height: auto;
   margin-top: 50px;
   margin-left: 50px;
 }
 
 #quote {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  font-weight: 400;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.5em;
   color: black;
-  line-height: 1.5;
   text-align: center;
   margin: 0;
 }
 
 span {
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 1.5em;
+  display: block;
+  margin-top: 1em;
   color: white;
-  text-align: center;
-  margin: 0;
 }
+
+/*.spotifyPlayer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}*/
 
 /*.cover {
     width: 300px;

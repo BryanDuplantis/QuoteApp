@@ -1,12 +1,10 @@
-// var QUOTE_API_URL = 'http://api.theysaidso.com/qod?category=love'
 var FIREBASE_LOVE_URL = 'https://my-cappstone.firebaseio.com/'
+var ref = new Firebase('https://my-cappstone.firebaseio.com/quotes');
 var loveBtn;
 var truthBtn;
 var beautyBtn;
 
-function getQuotes () {
 
-};
 
 // Button click code
 
@@ -14,46 +12,34 @@ loveBtn = $(".loveBtn");
 truthBtn = $(".truthBtn");
 beautyBtn = $(".beautyBtn");
 
+
 $(".loveBtn").on("click", function() {
-  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
-    var quote = data[0].quote;
-    var author = data[0].author;
+    getQuotes(getLoveQuote);
 
-    $("#quote").html(quote)
-    $("#author").html(author)
-})
   });
 
+
 $(".truthBtn").on("click", function() {
-  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
-    var quote = data[9].quote;
-    var author = data[9].author;
+    getQuotes(getTruthQuote);
 
-    $("#quote").html(quote)
-    $("#author").html(author)
-
-})
   });
 
 $(".beautyBtn").on("click", function() {
-  $.get(FIREBASE_LOVE_URL + "quotes.json", function (data) {
 
-    var quote = data[11].quote;
-    var author = data[11].author;
+    getQuotes(getBeautyQuote);
 
-    $("#quote").html(quote)
-    $("#author").html(author)
-
-})
   });
 
+// creates empty array variables to hold objects
 loveArr = [];
 truthArr = [];
 beautyArr = [];
 
-$.get('https://my-cappstone.firebaseio.com/quotes.json')
+// loops through array
+function getQuotes(cb){
+  $.get('https://my-cappstone.firebaseio.com/quotes.json')
             .success(function(data) {
                 quotes = data;
                 for( var i=0; i < Object.keys(quotes).length; i++) {
@@ -76,13 +62,42 @@ $.get('https://my-cappstone.firebaseio.com/quotes.json')
                         });
                     }
                 }
+                cb();
             });
+}
+
+function getTruthQuote (){
+    var rand = Math.floor(Math.random() * truthArr.length);
+
+    var quote = truthArr[rand].quote;
+    var author = truthArr[rand].author;
+
+    $("#quote").html(quote)
+    $("#author").html(author)
+}
+
+function getLoveQuote (){
+    var rand = Math.floor(Math.random() * loveArr.length);
+
+    var quote = loveArr[rand].quote;
+    var author = loveArr[rand].author;
+
+    $("#quote").html(quote)
+    $("#author").html(author)
+}
+
+function getBeautyQuote (){
+    var rand = Math.floor(Math.random() * beautyArr.length);
+
+    var quote = beautyArr[rand].quote;
+    var author = beautyArr[rand].author;
+
+    $("#quote").html(quote)
+    $("#author").html(author)
+}
 
 
-
-
-
-
+// always run this function
 function getJSON(url, cb) {
   var xhr = new XMLHttpRequest();
 
@@ -167,30 +182,3 @@ function getJSON(url, cb) {
 // });
 
 // searchAlbums('Beastie Boys');
-
-
-
-// TeamTreeHouse code for parsing JSON data
-
-// var xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function() {
-//   if(xhr.readyState === 4) {
-//     var employees = JSON.parse(xhr.responseText);
-//     var statusHTML = '<ul class="bulleted">';
-//     for (var i=0; i<employees.length; i += 1) {
-//       if (employees[i].inoffice === true) {
-//         statusHTML += '<li class="in">';
-//       } else {
-//         statusHTML += '<li class="out">';
-//       }
-//       statusHTML += employees[i].name;
-//       statusHTML += '</li>';
-//     }
-//     statusHTML += '</ul>';
-//     document.getElementById('employeeList').innerHTML = statusHTML;
-//   }
-// };
-// xhr.open('GET', 'data/employees.json');
-// xhr.send();
-
-// end of JSON code
