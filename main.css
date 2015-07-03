@@ -23,6 +23,14 @@ body {
   height: 10px;
 }
 
+.btn-primary {
+  margin-top: 10px;
+}
+
+.jumbotron p {
+  font-size: 145px;
+}
+
 .twitterBox {
   border: 1px solid black;
   background-color: rgb(234,234,234);
@@ -31,17 +39,8 @@ body {
   border-radius: 25px;
 }
 
-#titleText {
-  /*border: 1px solid black;
-  text-shadow: 2px 2px 4px black;
-  background-color: rgb(220,196,145);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 25px;*/
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  font-size: 2.2em;
-  text-align: center;
+.twitter-follow-button {
+  margin-bottom: 20px;
 }
 
 .loveBtn {

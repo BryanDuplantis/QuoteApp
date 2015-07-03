@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,800italic,400,800,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -20,12 +20,36 @@
       </nav>
 
       <div class="jumbotron">
-        <p>"Three things cannot be long hidden: the sun, the moon, the truth." - Buddha</p>
+         <iframe src="http://8tracks.com/mixes/5259010/player_v3_universal" width="300" height="250" style="border: 0px none;"></iframe>
+        <p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;"><a href="http://8tracks.com/noonpacific/noon-145?utm_medium=trax_embed">NOON // 145</a> from <a href="http://8tracks.com/noonpacific?utm_medium=trax_embed">NoonPacific</a> on <a href="http://8tracks.com?utm_medium=trax_embed">8tracks Radio</a>.</p>
+         <!-- Button trigger modal -->
+          <p>"Three things cannot be long hidden: the sun, the moon, the truth." - Buddha</p>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Click Button To Get Started</button>
+      </div>
+
+        <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container">
         <div class="row">
           <div class="col-md-3 twitterBox">
+              <a href="https://twitter.com/duplantis" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @duplantis</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
               <a class="twitter-timeline" href="https://twitter.com/duplantis/lists/faith" data-widget-id="613081284768854016">Tweets from https://twitter.com/duplantis/lists/faith</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
@@ -42,10 +66,9 @@
         </div>
       </div>
 
-
       <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
       <script src="main.js"></script>
 
@@ -54,6 +77,8 @@
 
 
 
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script> -->
 
   <!-- <div class="col-md-3col-md-offset-4 spotifyPlayer">
               <iframe src="https://embed.spotify.com/?uri=spotify:user:duplantis:playlist:2Ynrw82RUwIZbIDhuJUK9Q" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>

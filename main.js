@@ -4,7 +4,10 @@ var loveBtn;
 var truthBtn;
 var beautyBtn;
 
+// $('#myModal').modal('show');
 
+
+$( ".quoteBox" ).hide();
 
 // Button click code
 
@@ -95,6 +98,28 @@ function getBeautyQuote (){
     $("#quote").html(quote)
     $("#author").html(author)
 }
+
+
+//shows & hides quoteBox on button click
+
+$( ".loveBtn" ).click(function() {
+  $( ".quoteBox" ).show( "fast", function() {
+    // Animation complete.
+  });
+});
+
+$( ".truthBtn" ).click(function() {
+  $( ".quoteBox" ).show( "fast", function() {
+    // Animation complete.
+  });
+});
+
+$( ".beautyBtn" ).click(function() {
+  $( ".quoteBox" ).show( "fast", function() {
+    // Animation complete.
+  });
+});
+
 
 
 // always run this function
