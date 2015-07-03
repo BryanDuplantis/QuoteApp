@@ -11,38 +11,34 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,800italic,400,800,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Logo -->
             <div class="navbar-header">
                 <a href="#" class="navbar-brand" id="navBarName">Don't Quote Me</a>
             </div>
         </div>
-    </nav>
+      </nav>
+
+      <div class="jumbotron">
+        <p>"Three things cannot be long hidden: the sun, the moon, the truth." - Buddha</p>
+      </div>
 
       <div class="container">
-
         <div class="row">
+          <div class="col-md-3 twitterBox">
+              <a class="twitter-timeline" href="https://twitter.com/duplantis/lists/faith" data-widget-id="613081284768854016">Tweets from https://twitter.com/duplantis/lists/faith</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
 
-            <div class="col-md-3 twitterBox">
-                <a class="twitter-timeline" href="https://twitter.com/duplantis/lists/faith" data-widget-id="613081284768854016">Tweets from https://twitter.com/duplantis/lists/faith</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-
-            <h1 id="titleText">Click a button to generate a random quote</h1>
-
-            <div class="col-md-3col-md-offset-4 spotifyPlayer">
-              <iframe src="https://embed.spotify.com/?uri=spotify:user:duplantis:playlist:2Ynrw82RUwIZbIDhuJUK9Q" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-            </div>
-
-            <div class="col-md-3"><img class="loveBtn img-responsive" src="http://1.bp.blogspot.com/-H06yphTXaYg/UvLb4Ojh9FI/AAAAAAAAE-I/hOiGzwS-Lrs/s1600/lovearrow.png" alt="Love"></div>
-            <div class="col-md-3"> <img class="truthBtn img-responsive" src="http://www.truthdubstep.com/images/truth-dubstep.png" alt="Love"></div>
-            <div class="col-md-3"><img class="beautyBtn img-responsive" src="http://lh6.ggpht.com/-U9zZT_tnOHw/Tl7JXxrg4uI/AAAAAAAABHo/WkA6ycnQWPc/week3beauty_thumb2.png?imgmax=800" alt="Love"></div>
+            <div class="col-md-3"><img class="loveBtn" src="http://sites.psu.edu/alectaren/wp-content/uploads/sites/3854/2013/05/Capture1.png" alt="Love"></div>
+            <div class="col-md-3"> <img class="truthBtn" src="http://www.understandingrelationships.com/wp-content/uploads/Fotolia_59528725_Subscription_Monthly_M.jpg" alt="Truth"></div>
+            <div class="col-md-3"><img class="beautyBtn" src="https://img1.etsystatic.com/025/0/8721630/il_fullxfull.564482089_pj32.jpg" alt="Beauty"></div>
 
             <div class="col-md-8 quoteBox">
               <p id="quote"></p>
               <span id="author"></span>
             </div>
+
         </div>
       </div>
 
@@ -59,17 +55,6 @@
 
 
 
-
-
-
-
-
-<!-- <div class="container">
-<h2>Discography</h2>
-<p>Click an album cover to hear a 30 second preview, or click the button to play the album on Spotify!</p><br />
-<div id="results"></div>
-</div> -->
-<!-- <script id="results-template" type="text/x-handlebars-template"></script>
-// {{#each albums.items}}
-// <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"><a href="{{external_urls.spotify}}"><div class="spotify-button"><img src="https://developer.spotify.com/wp-content/uploads/2014/06/play_on_spotify-green.png" /></div></a></div>
-// {{/each}} -->
+  <!-- <div class="col-md-3col-md-offset-4 spotifyPlayer">
+              <iframe src="https://embed.spotify.com/?uri=spotify:user:duplantis:playlist:2Ynrw82RUwIZbIDhuJUK9Q" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+            </div> -->
