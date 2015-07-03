@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,800italic,400,800,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -16,6 +16,11 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-brand" id="navBarName">Don't Quote Me</a>
             </div>
+              <ul>
+                <a href="http://www.twitter.com/duplantis" target="_blank"> <i class="fa fa-twitter-square"></i></a>
+                <a href="http://www.facebook.com/BryanDuplantis" target="_blank"> <i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.linkedin.com/in/bryanduplantis" target="_blank"> <i class="fa fa-linkedin"></i></a>
+              </ul>
         </div>
       </nav>
 
@@ -23,8 +28,8 @@
          <iframe src="http://8tracks.com/mixes/5259010/player_v3_universal" width="300" height="250" style="border: 0px none;"></iframe>
         <p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;"><a href="http://8tracks.com/noonpacific/noon-145?utm_medium=trax_embed">NOON // 145</a> from <a href="http://8tracks.com/noonpacific?utm_medium=trax_embed">NoonPacific</a> on <a href="http://8tracks.com?utm_medium=trax_embed">8tracks Radio</a>.</p>
          <!-- Button trigger modal -->
-          <p>"Three things cannot be long hidden: the sun, the moon, the truth." - Buddha</p>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Click Button To Get Started</button>
+          <p id="frontQuote">"Three things cannot be long hidden: the sun, the moon, the truth." - Buddha</p>
+          <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">Click Button To Get Started</button>
       </div>
 
         <!-- Modal -->
@@ -33,10 +38,10 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <h4 class="modal-title" id="myModalLabel">Don't Quote Me</h4>
             </div>
             <div class="modal-body">
-              ...
+              Click an image below to generate a random quote based on that word.
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -65,6 +70,12 @@
 
         </div>
       </div>
+
+      <footer>
+        <p>Designed by Bryan Duplantis</p>
+        <!-- <p>If you like what you see, drop me a note: <a href="mailto:duplantis@gmail">
+        duplantis@gmail.com</a>.</p> -->
+      </footer>
 
       <script src="https://cdn.firebase.com/js/client/2.2.5/firebase.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

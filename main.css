@@ -27,8 +27,9 @@ body {
   margin-top: 10px;
 }
 
-.jumbotron p {
-  font-size: 145px;
+#frontQuote {
+  font-size: 35px;
+  font-weight: 200;
 }
 
 .twitterBox {
@@ -41,6 +42,10 @@ body {
 
 .twitter-follow-button {
   margin-bottom: 20px;
+}
+
+.modal-body {
+  font-size: 25px;
 }
 
 .loveBtn {
@@ -74,7 +79,7 @@ body {
 }
 
 .quoteBox {
-  position: absolute;
+  /*position: absolute;*/
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgb(234,234,234);
@@ -99,6 +104,17 @@ span {
   display: block;
   margin-top: 1em;
   color: white;
+}
+
+.fa {
+  color: white;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+footer {
+  font-size: 20px;
 }
 
 /*.spotifyPlayer {

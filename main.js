@@ -103,19 +103,19 @@ function getBeautyQuote (){
 //shows & hides quoteBox on button click
 
 $( ".loveBtn" ).click(function() {
-  $( ".quoteBox" ).show( "fast", function() {
+  $( ".quoteBox" ).fadeIn( "fast", function() {
     // Animation complete.
   });
 });
 
 $( ".truthBtn" ).click(function() {
-  $( ".quoteBox" ).show( "fast", function() {
+  $( ".quoteBox" ).fadeIn( "fast", function() {
     // Animation complete.
   });
 });
 
 $( ".beautyBtn" ).click(function() {
-  $( ".quoteBox" ).show( "fast", function() {
+  $( ".quoteBox" ).fadeIn( "fast", function() {
     // Animation complete.
   });
 });
