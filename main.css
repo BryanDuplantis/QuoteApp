@@ -19,8 +19,10 @@ body {
 }
 
 #navBarName {
-  font-size: 2.2em;
-  height: 10px;
+  font-family: 'Special Elite', cursive;
+  color: white;
+  font-size: 35px;
+  margin-top: 5px;
 }
 
 .btn-primary {
@@ -28,8 +30,8 @@ body {
 }
 
 #frontQuote {
-  font-size: 35px;
-  font-weight: 200;
+  font-family: 'Special Elite', cursive;
+  font-size: 25px;
 }
 
 .twitterBox {
@@ -45,7 +47,13 @@ body {
 }
 
 .modal-body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
+}
+
+.modal-title {
+  font-family: 'Special Elite', cursive;
+  font-size: 35px;
 }
 
 .loveBtn {
@@ -91,19 +99,19 @@ body {
 }
 
 #quote {
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 1.5em;
+  font-family: 'Special Elite', cursive;
+  font-size: 30px;
   color: black;
   text-align: center;
   margin: 0;
 }
 
 span {
-  font-family: 'Open Sans';
-  font-size: 1.5em;
+  font-family: 'Special Elite', cursive;
+  font-size: 25px;
   display: block;
   margin-top: 1em;
-  color: white;
+  color: black;
 }
 
 .fa {
