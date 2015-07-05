@@ -4,6 +4,8 @@ var loveBtn;
 var truthBtn;
 var beautyBtn;
 
+var app = angular.module('myApp', []);
+
 // $('#myModal').modal('show');
 
 
