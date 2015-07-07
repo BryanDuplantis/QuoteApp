@@ -83,7 +83,7 @@ a, p {
   border-radius: 25px;
 }
 
-.loveBtn:hover, .truthBtn:hover, .beautyBtn:hover {
+.loveBtn:hover, .truthBtn:hover, .beautyBtn:hover, .quoteImg:hover {
   -ms-transform: rotate(-10deg);
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
