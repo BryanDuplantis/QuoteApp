@@ -18,6 +18,13 @@ body {
     padding-top: 70px;
 }
 
+a, p {
+  font-family: 'Special Elite', cursive;
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 #navBarName {
   font-family: 'Special Elite', cursive;
   color: white;
@@ -30,11 +37,6 @@ body {
   margin-top: 7px;
 }
 
-.WebStoreImg {
-  margin-bottom: 7px;
-  margin-top: 25px;
-}
-
 .btn-primary {
   margin-top: 10px;
   background-color: rgb(56,178,250);
@@ -42,7 +44,7 @@ body {
 
 #frontQuote {
   font-family: 'Special Elite', cursive;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .twitterBox {
@@ -67,9 +69,12 @@ body {
   font-size: 35px;
 }
 
+.jumbotron {
+  padding-bottom: 125px;
+}
+
 .loveBtn {
   border: 1px solid;
-  margin-top: 25px;
   margin-right: 50px;
   margin-left: 50px;;
   height: 200px;
@@ -79,7 +84,6 @@ body {
 
 .truthBtn {
   border: 1px solid;
-  margin-top: 25px;
   margin-right: 50px;
   margin-left: 50px;
   height: 200px;
@@ -89,7 +93,6 @@ body {
 
 .beautyBtn {
   border: 1px solid;
-  margin-top: 25px;
   margin-right: 50px;
   margin-left: 50px;
   height: 200px;
@@ -131,6 +134,11 @@ span {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 20px;
+}
+
+.WebStoreImg {
+  margin-bottom: 7px;
+  margin-top: 25px;
 }
 
 footer {

@@ -123,34 +123,6 @@ $( ".beautyBtn" ).click(function() {
 });
 
 
-// jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-  if ($(".navbar").offset().top > 50) {
-    $(".navbar-fixed-top").addClass("top-nav-collapse");
-  } else {
-    $(".navbar-fixed-top").removeClass("top-nav-collapse");
-  }
-});
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-  $('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
-    }, 1000, 'easeInOutExpo');
-    event.preventDefault();
-  });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  $('.navbar-toggle:visible').click();
-});
-
-
-
-
 // always run this function
 function getJSON(url, cb) {
   var xhr = new XMLHttpRequest();
@@ -171,11 +143,19 @@ function getJSON(url, cb) {
 
 
 
+// // main.js for ZeroClipboard
+// var client = new ZeroClipboard( document.getElementById("copy-button") );
 
+// client.on( "ready", function( readyEvent ) {
+//   // alert( "ZeroClipboard SWF is ready!" );
 
-
-
-
+//   client.on( "aftercopy", function( event ) {
+//     // `this` === `client`
+//     // `event.target` === the element that was clicked
+//     event.target.style.display = "none";
+//     alert("Copied text to clipboard: " + event.data["text/plain"] );
+//   } );
+// } );
 
 
 
