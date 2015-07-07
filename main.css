@@ -21,7 +21,7 @@ body {
 a, p {
   font-family: 'Special Elite', cursive;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
 }
 
@@ -60,7 +60,7 @@ a, p {
 }
 
 .modal-body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Special Elite', cursive;
   font-size: 25px;
 }
 
@@ -73,31 +73,22 @@ a, p {
   padding-bottom: 125px;
 }
 
-.loveBtn {
+.loveBtn, .truthBtn, .beautyBtn {
   border: 1px solid;
   margin-right: 50px;
-  margin-left: 50px;;
+  margin-left: 50px;
+  margin-bottom: 10px;
   height: 200px;
   width: 200px;
   border-radius: 25px;
 }
 
-.truthBtn {
-  border: 1px solid;
-  margin-right: 50px;
-  margin-left: 50px;
-  height: 200px;
-  width: 200px;
-  border-radius: 25px;
-}
-
-.beautyBtn {
-  border: 1px solid;
-  margin-right: 50px;
-  margin-left: 50px;
-  height: 200px;
-  width: 200px;
-  border-radius: 25px;
+.loveBtn:hover, .truthBtn:hover, .beautyBtn:hover {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 .quoteBox {
